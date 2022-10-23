@@ -1,9 +1,10 @@
 package com.jpa.project.repository;
 
-import com.jpa.project.model.Pessoa;
+import com.jpa.project.model.Cliente;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PersonRepository extends JpaRepository<Pessoa,Integer> {
+public interface ClienteRepository extends JpaRepository<Cliente,Integer>,ActiveRepository<Cliente> {
+
 }
