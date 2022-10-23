@@ -22,6 +22,6 @@ public class TestRunable implements ApplicationRunner {
         var pessoaAtivos = pessoaRepository.findAllActives();
         var clienteAtivos = clienteRepository.findAllActives();
 
-        System.out.println("## FIM");
+        System.out.println("## FIM ##");
     }
 }
