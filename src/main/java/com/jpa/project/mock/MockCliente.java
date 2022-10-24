@@ -17,10 +17,10 @@ public class MockCliente implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) {
-        this.clienteRepository.save(Cliente.builder().nome("Cliente 1 true").cpf("142.242.807-12").active(true).build());
-        this.clienteRepository.save(Cliente.builder().nome("Cliente 2").cpf("152.242.807-23").active(false).build());
+        this.clienteRepository.save(Cliente.builder().nome("Roberto Cliente 1 true").cpf("142.242.807-12").active(true).build());
+        this.clienteRepository.save(Cliente.builder().nome("Ramon Cliente 2").cpf("152.242.807-23").active(false).build());
         this.clienteRepository.save(Cliente.builder().nome("Cliente 3").cpf("162.242.807-34").active(false).build());
-        this.clienteRepository.save(Cliente.builder().nome("Cliente 4 true").cpf("172.242.807-45").active(true).build());
+        this.clienteRepository.save(Cliente.builder().nome("Renan Cliente 4 true").cpf("152.242.807-45").active(true).build());
         this.clienteRepository.save(Cliente.builder().nome("Cliente 5").cpf("182.242.807-56").active(false).build());
     }
 }
