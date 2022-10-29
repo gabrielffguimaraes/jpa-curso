@@ -17,7 +17,8 @@ public class MockPessoa implements ApplicationRunner {
         this.pessoaRepository.save(new Pessoa("João",20,false));
         this.pessoaRepository.save(new Pessoa("João",40,false));
         this.pessoaRepository.save(new Pessoa("Maria",25,false));
-        this.pessoaRepository.save(new Pessoa("Joana",19,false));
+        this.pessoaRepository.save(new Pessoa("Joana",17,false));
         this.pessoaRepository.save(new Pessoa("Pedro",19,true));
+        this.pessoaRepository.save(new Pessoa("João",80,true));
     }
 }

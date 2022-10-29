@@ -13,6 +13,8 @@ public class Pessoa {
     @Column
     private String nome;
     @Column
+    private String firstName;
+    @Column
     private Integer idade;
     @Column
     private Boolean active;

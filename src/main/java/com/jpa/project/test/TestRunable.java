@@ -1,6 +1,8 @@
 package com.jpa.project.test;
 
 import com.jpa.project.model.Cliente;
+import com.jpa.project.model.Pessoa;
+import com.jpa.project.model.PessoaDto;
 import com.jpa.project.repository.ClienteRepository;
 import com.jpa.project.repository.PessoaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +45,14 @@ public class TestRunable implements ApplicationRunner {
                 .withMatcher("cpf",startsWith());
         var clientesEx = clienteRepository.findAll(Example.of(Cliente.builder().nome("R").cpf("15").build(),ex));
         */
+        /*var maioresDeIdade = pessoaRepository.ageHigherThan18();*/
+        //var listWithFirstName = pessoaRepository.findByFirstName();
+        var list1 = pessoaRepository.findByNome(JOAO, Pessoa.class);
+        var list2 = pessoaRepository.findByNome(JOAO, PessoaDto.class);
+        System.out.println(list1);
+        for(PessoaDto pessoaDto: list2){
+            System.out.println(pessoaDto);
+        }
         System.out.println("## FIM ##");
     }
 }
